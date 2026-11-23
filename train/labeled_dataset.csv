@@ -1606,7 +1606,7 @@ sentence_id,word_id,word,label
 72,1604,yung,FIL
 72,1605,guidance,ENG
 72,1606,Niya,FIL
-72,1607,and,FIL
+72,1607,and,ENG
 72,1608,Siya,FIL
 72,1609,yung,FIL
 72,1610,alam,FIL
@@ -3260,7 +3260,7 @@ sentence_id,word_id,word,label
 141,3258,seventy,ENG
 141,3259,eight,ENG
 141,3260,bilyon,FIL
-141,3261,pesos,OTH
+141,3261,pesos,ENG
 141,3262,na,FIL
 141,3263,ang,FIL
 141,3264,kabuuang,FIL
@@ -6672,7 +6672,7 @@ sentence_id,word_id,word,label
 296,6670,point,ENG
 296,6671,four,ENG
 296,6672,million,ENG
-296,6673,pesos,OTH
+296,6673,pesos,ENG
 296,6674,na,FIL
 296,6675,halaga,FIL
 296,6676,ng,FIL
@@ -7111,7 +7111,7 @@ sentence_id,word_id,word,label
 316,7109,ng,FIL
 316,7110,five,ENG
 316,7111,thousand,ENG
-316,7112,pesos,FIL
+316,7112,pesos,ENG
 316,7113,ang,FIL
 316,7114,nabili,FIL
 316,7115,.,OTH

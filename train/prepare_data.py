@@ -2,7 +2,8 @@
 Turns the 3 annotator columns of final_dataset.csv into a single label per word.
 
 Rule: majority vote (the tag chosen by at least 2 of the 3 groups).
-The 2 words where all 3 groups disagree are decided by hand below.
+The 2 words where all 3 groups disagree, and a few majorities that contradict
+the spec, are decided by hand below.
 
 Run from the project root: python3 train/prepare_data.py
 """
@@ -15,10 +16,16 @@ ROOT = Path(__file__).resolve().parent.parent
 INPUT = ROOT / "final_dataset.csv"
 OUTPUT = ROOT / "train" / "labeled_dataset.csv"
 
-# Words with no majority (3 different tags), decided by our group. Key: word_id.
+# Labels decided by our group. Key: word_id.
 MANUAL_LABELS = {
+    # No majority (3 different tags)
     "5278": "ENG",  # "pesos" (sentence 231): English spelling, Filipino would be "piso"
     "6376": "ENG",  # "solon" (sentence 286): English word meaning legislator
+    # Majority contradicts the spec
+    "1607": "ENG",  # "and" (sentence 72): English word, ENG in its 33 other occurrences
+    "3261": "ENG",  # "pesos" (sentence 141): same tag for every "pesos"
+    "6673": "ENG",  # "pesos" (sentence 296)
+    "7112": "ENG",  # "pesos" (sentence 316)
 }
 
 rows = []
